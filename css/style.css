@@ -56,7 +56,7 @@ header.banner{
 /*===================================================*/
 #navbar{
 /*	border: 0.5px solid rgba(255, 255, 255, 0.3);*/
-	width: 60%;
+	width: 90%;
 }
 /*===================================================*/
 /*===================================================*/
@@ -65,9 +65,9 @@ header.banner{
 	float: left;
 	font-family: 'Roboto', sans-serif;
 	font-weight: normal;
-	font-size: 14px;
+	font-size: 20px;
 	color: #eee;
-	padding: 6px 10px;
+	padding: 6px 2rem;
 }
 /*===================================================*/
 /*===================================================*/
@@ -75,6 +75,7 @@ ul{
 	float: right;
 /*	border: 1px solid #fff;*/
 	list-style-type: none;
+	margin-right: 2rem;
 }
 ul li{
 /*	border: 1px solid red;*/
@@ -88,8 +89,8 @@ ul li a{
 	color: #ccc;
 	display: block;
 	font-family: 'Open sans', sans-serif;
-	font-size: 14px;
-	padding: 6px 10px;
+	font-size: 16px;
+	padding: 8px 10px;
 }
 ul li a:hover{
 	color: #eee;
@@ -101,7 +102,7 @@ ul li a:hover{
 	color: #eee;
 	padding: 6px 10px;
 	cursor: pointer;
-	font-size: 16px;
+	font-size: 18px;
 	display: none;
 }
 #navbar button:hover{
@@ -470,7 +471,17 @@ main.wrapper{
 		float: none;
 	}
 	#navbar{
-		max-width: 80%;
+		width: 95%;
+	}
+
+	#navbar .logo{
+	/*	border: 1px solid red;*/
+		float: left;
+		font-family: 'Roboto', sans-serif;
+		font-weight: normal;
+		font-size: 22px;
+		color: #ccc;
+		padding: 6px 2rem;
 	}
 
 	ul{
@@ -503,6 +514,14 @@ main.wrapper{
 
 	#navbar button{
 		display: block;
+		/*	border: 1px solid red;*/
+		background: transparent;
+		float: right;
+		color: #ccc;
+		padding: 8px 10px;
+		cursor: pointer;
+		font-size: 24px;
+		margin-right: 1rem;
 	}
 	
 	ul#navMenu button#close{
@@ -581,7 +600,18 @@ main.wrapper{
 	}
 	
 	#navbar{
-		max-width: 90%;
+/*		border: 1px solid #fff;*/
+		width: 95%;
+	}
+
+	#navbar .logo{
+	/*	border: 1px solid red;*/
+		float: left;
+		font-family: 'Roboto', sans-serif;
+		font-weight: normal;
+		font-size: 20px;
+		color: #ccc;
+		padding: 6px 2rem;
 	}
 	
 	ul{
@@ -610,6 +640,17 @@ main.wrapper{
 		padding: 20px;
 		letter-spacing: 0.6px;
 		font-size: 18px;
+	}
+
+	#navbar button{
+	/*	border: 1px solid red;*/
+		background: transparent;
+		float: right;
+		color: #ccc;
+		padding: 8px 10px;
+		cursor: pointer;
+		font-size: 20px;
+		margin-right: 1rem;
 	}
 	
 	ul#navMenu button#close{
