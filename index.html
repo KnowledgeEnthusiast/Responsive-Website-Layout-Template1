@@ -43,14 +43,17 @@
     <header class="banner">
         <nav id="navbar" class="max-width clearfix">
             <a href="index.html" class="logo">Theory</a>
+
             <ul id="navMenu" class="naviagtion">
                 <button type="button" id="close"><i class="fa-solid fa-xmark"></i></button>
-                <li class="navLinks"><a href="#sect1" class="navItems">Home</a></li>
-                <li class="navLinks"><a href="#sect2" class="navItems">Generic</a></li>
-                <li class="navLinks"><a href="#sect3" class="navItems">Elements</a></li>
+                <li class="navLinks"><a href="#sect1" id="navItem1" class="navItems">Home</a></li>
+                <li class="navLinks"><a href="#sect2" id="navItem2" class="navItems">Generic</a></li>
+                <li class="navLinks"><a href="#sect3" id="navItem3" class="navItems">Elements</a></li>
             </ul>
+            
             <button type="button" id="menu"><i class="fa-solid fa-bars"></i></button>
         </nav>
+        
         <div class="title max-width">
             <h1>Welcome to Theory</h1>
             <p>A free responsive HTML5 website template by TEMPLATED</p>
@@ -58,7 +61,7 @@
     </header>
 
     <main class="wrapper">
-        <div id="sect1" class="container1 clearfix">
+        <div id="sect1" class="container1">
             <div class="box">
                 <h2>Interdum lorem pulvinar adipiscing vitae</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem omnis, tenetur modi quam eveniet recusandae, debitis autem laborum ipsam impedit?<br><br><a href="#" class="btn">More</a></p>
@@ -75,9 +78,10 @@
             </div>
         </div>
 
-        <div id="sect2" class="container2">
-            <h2>Ipsum Feugiat</h2>
+        <div class="container2">
+            <h2 id="sect2">Ipsum Feugiat</h2>
             <p><small>Semper suscipit posuere apede</small></p>
+
             <div class="profiles">
                 <div class="profile-card">
                     <img src="img/pic03.jpg" alt="image01.jpg" width="100%"><br>
@@ -103,8 +107,8 @@
         </div>
 
 
-        <div id="sect3" class="container3">
-            <h1>Nunc Dignissim</h1>
+        <div class="container3">
+            <h1 id="sect3">Nunc Dignissim</h1>
             <p>Aliquam erat volutpat nam dui</p>
             <section class="portfolio-cards">
                 <aside class="left-box">
@@ -135,24 +139,19 @@
 
     <!-- JavaScript & JQuery CDN Links -->
 
-    <script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery-3.6.3.min.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function(){
             $("#menu").click(function(){
                 $("#navMenu").fadeToggle(200, function(){
-                    $("#close").click(function(){
-                        $("#navMenu").fadeOut();
+                    $("#close, #navItem1, #navItem2, #navItem3").click(function(){
+                        $("#navMenu").fadeOut(100);
                     });
                 });
-            });
-        });
-    </script>
-
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".navItems").click(function(){
-                $("#navMenu").fadeOut();
             });
         });
     </script>
